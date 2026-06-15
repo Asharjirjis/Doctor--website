@@ -1994,7 +1994,78 @@
         flex-direction: column;
         align-items: flex-start;
         }
+
       
+      .sticky-mobile-cta {
+        display: flex;
+      }
+
+      body {
+        padding-bottom: 76px;
+      }
+
+      .float-whatsapp {
+        bottom: 92px;
+      }
+
+      .nav-tel {
+        font-size: 0.78rem;
+        padding: 7px 11px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        justify-content: center;
+      }
+
+      .hero-trust {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-stats-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .hero-stat-item {
+        padding: 14px 8px;
+      }
+    }
+
+    /* ==============================
+       PRINT
+    ============================== */
+    @media print {
+      .navbar, .float-whatsapp, .sticky-mobile-cta, .mobile-menu, #loader { display: none !important; }
+      body { padding: 0 !important; }
+    }
+    </style>
+</head>
+
+<body>
+
+<!-- ====== SCROLL PROGRESS ====== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ====== LOADER ====== -->
+<div id="loader">
+  <div class="loader-cross"></div>
+  <p class="loader-text">Loading...</p>
+</div>
+
+<!-- ====== FLOATING WHATSAPP ====== -->
+<a class="float-whatsapp" href="https://wa.me/91XXXXXXXXXX?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="float-wa-pulse"></div>
+  <span class="float-whatsapp-tooltip">Chat on WhatsApp</span>
+
+  
 
       
     
